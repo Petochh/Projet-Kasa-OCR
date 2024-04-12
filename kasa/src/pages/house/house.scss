@@ -1,0 +1,66 @@
+.house_page_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 7%;
+
+    & .banner{
+        width: 100%;
+        &_slide{
+            &_image{
+                height: 433px;
+            }
+        }
+    }
+
+    &_info{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &_collapse{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin: 24px 0 50px 0;
+
+        & .collapse{
+            width: 44%;
+            &_body{
+                &_content ul{
+                    list-style: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .house_page_container{
+
+        & .banner{
+
+            &_slide{
+                &_image{
+                    height: 255px;
+                }
+            }
+        }
+
+        &_info{
+            flex-direction: column;
+        }
+
+        &_collapse{
+            flex-direction: column;
+            margin: 0;
+            & .collapse{
+                width: 100%;
+                margin: 20px auto;
+            }
+
+        }
+    }
+}

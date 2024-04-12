@@ -1,0 +1,31 @@
+@import "../../assets/utils/mixins";
+
+
+.home_page_container{
+
+    & .banner{
+        overflow: hidden;
+        height: 223px;
+        border-radius: 25px;
+
+        &_slide{
+            &::after{
+                opacity: 0.6;
+                @include bannerOpacity;
+            }
+            &_image{
+                height: 233px;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 768px){
+    .home_page_container{
+
+        & .banner{
+            height: 111px;
+        }
+    }
+}
