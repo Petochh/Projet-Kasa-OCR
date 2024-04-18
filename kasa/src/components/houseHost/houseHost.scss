@@ -3,9 +3,12 @@
     flex-direction: column;
     margin-top: 24px;
     &_id{
+        justify-content: end;
         display: flex;
+        align-items: center;
 
         &_name{
+            width: 40%;
             font-size: 18px;
             font-weight: 500;
             color: #FF6060;
@@ -19,6 +22,9 @@
         }
     }
     &_rate{
+        display: flex;
+        justify-content: end;
+        width: 100%;
         white-space: nowrap;
         &_star{
             margin: 30px 4px;
@@ -37,6 +43,7 @@
 
         &_id{
             &_name{
+                margin-right: 20%;
                 font-size: 12px;
             }
             &_img{
@@ -45,6 +52,7 @@
             }
         }
         &_rate{
+            justify-content: start;
             &_star{
                 margin: 0 1px;
                 height: 13px;
